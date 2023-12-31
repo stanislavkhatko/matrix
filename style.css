@@ -1,5 +1,41 @@
+html {
+  background: #000001;
+}
+
 body {
+  background: #000001;
   margin: 0;
+  padding: 0;
   height: 100vh;
   width: 100vw;
+  font-size: 15px;
+}
+
+#console {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 15px;
+  display: flex;
+  background: #000001;
+}
+
+label {
+  color: #00ff00;
+  font-family: monospace;
+  white-space: nowrap;
+}
+
+#console-input {
+  margin-left: 5px;
+  background: #000001;
+  width: 100%;
+  outline: none;
+  font-size: 15px;
+  border: hidden;
+  caret-color: #00ff00;
+  color: #00ff00;
+  font-family: monospace;
+  box-sizing: border-box;
 }

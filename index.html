@@ -8,10 +8,46 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Stanislav Khatko</title>
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H01PENGRDM"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-H01PENGRDM');
+</script>
+
 <body>
 
-<canvas id="background" width="500" height="200"></canvas>
+<label for="console-input">
+    <canvas id="background" width="100vw" height="100vh"></canvas>
+    <span id="console">
+        <label for="console-input">stanislav_khatko &#x2192</label>
+        <textarea autofocus id="console-input"></textarea>
+        <audio id="typing-sound">
+            <source src="audio/typing-sound.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="backspace-sound">
+            <source src="audio/backspace-sound.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="enter-sound">
+            <source src="audio/enter-sound.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </span>
+</label>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/autosize.js/3.0.20/autosize.min.js"
+        integrity="sha512-EAEoidLzhKrfVg7qX8xZFEAebhmBMsXrIcI0h7VPx2CyAyFHuDvOAUs9CEATB2Ou2/kuWEDtluEVrQcjXBy9yw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="script.js"></script>
 </body>
 </html>
