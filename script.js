@@ -101,15 +101,18 @@ document.addEventListener('DOMContentLoaded', function () {
         if (event.key === 'Backspace') {
             backspaceSound.currentTime = 0;
             backspaceSound.muted = true;
+            backspaceSound.volume = 0.3;
             backspaceSound.play();
         } else if (event.key === 'Enter') {
             enterSound.currentTime = 0;
             enterSound.muted = true;
+            enterSound.volume = 0.3;
             enterSound.play();
         } else {
             typingSound.currentTime = 0;
             typingSound.muted = true;
             typingSound.muted = false;
+            typingSound.volume = 0.3
             typingSound.play();
         }
     });
